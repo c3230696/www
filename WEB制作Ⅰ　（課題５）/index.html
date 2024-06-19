@@ -6,14 +6,14 @@
     <title>Document</title>
 </head>
 <style>
-    h1.q1{
-    }
-    .round_arrow {
-  position: relative;
+    h1.q1{position:relative;
   padding-left: 30px;
+    }
+  .q1{
+      position: relative;
+      padding-left: 30px;
 }
- 
-.round_arrow::before { 
+.q1::before { 
   content: "";
   position: absolute;
   margin: auto;
@@ -26,7 +26,7 @@
   background: green;
 }
  
-.round_arrow::after { 
+.q1::after { 
   content: "";
   position: absolute;
   margin: auto;
@@ -55,7 +55,6 @@
 </style>
 <body>
  <h4>問題１．丸い矢印が付いたデザインを再現しましょう。</h4>
-       <p class="round_arrow"></p>
-       <h1 class="q1">丸い矢印付きの見出し</h1>
+      <h1 class="q1">丸い矢印付きの見出し</h1>
 </body>
 </html>
