@@ -6,10 +6,12 @@
     <title>Responsive Design Practice</title>
 </head>
 <style>
-    body{
+      body{
         background-color: rgb(196, 230, 252);
     }
-
+    .sectionBox{
+        display: flex
+    }
    
 
     .section1{
@@ -39,28 +41,18 @@
         box-shadow: 0 0 5px gray;
     }
 
-    @media  screen and (max-width: 979px){
-       
-        #wrap{width:100%}
-        #logo{
-            display: flex;
-            margin:5px suto;
-            float:none;
+    
+    @media screen and (max-width: 800px) {
+        .sectionBox {
+          flex-wrap: wrap;
         }
-        #herd_meg{
-        
-            margin:0;
-            text-align:center;
-            float:none;
+      }
+ 
+      @media screen and (max-width: 400px) {
+       .sectionBox {
+          display: block;
         }
-        h1{font-size: 20px;}
-        #head_img{
-            flex-direction: column;
-            width:100%;
-            height:auto;
-        }
-       
-    }
+      }
 
 </style>
 <body>
