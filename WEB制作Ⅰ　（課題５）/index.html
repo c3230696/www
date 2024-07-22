@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1.q1{position:relative;
+  padding-left: 30px;
+    }
+  .q1{
+      position: relative;
+      padding-left: 30px;
+}
+.q1::before { 
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 3px;
+  width: 25px; 
+  height: 25px; 
+  border-radius: 50%; 
+  background: green;
+}
+ 
+.q1::after { 
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 7px;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+}
+
+    body{
+        background-color: #fff;
+        color: #666;
+        font-family: "メイリオ",Meiryo,"MS Pゴシック","MS PGothic","ヒラギノ角ゴ Pro W3","Hiraguno kaku Gothic Pro",Osaka,sans-serif;
+    }
+
+    h1{
+        font-family: "M PLUS lp",sans-serif;
+        color: #333;
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+</style>
+<body>
+ <h4>問題１．丸い矢印が付いたデザインを再現しましょう。</h4>
+      <h1 class="q1">丸い矢印付きの見出し</h1>
+</body>
+</html>
